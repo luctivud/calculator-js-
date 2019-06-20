@@ -1,0 +1,36 @@
+body{
+    margin-top: 100px;
+}
+button{
+    margin: 6px;
+}
+
+.btn-primary{
+    color: black;
+}
+.pad{
+    width: 6%;
+    border: 8%;
+}
+.bocs{
+    background: #b6bbc4;
+}
+
+.dl{
+    font-size:  x-small;
+    width: 45px;
+    font-weight: 900;
+    height: 6vh;
+    margin: 6px 7px;
+}
+.results{
+    width: 23.8%;
+    margin-left: -9px;
+}
+.screen1{
+    width: 258px;
+    height: 40px;
+    border: 1px solid red;
+    background: #b6bbc4;
+    text-align: right;
+}

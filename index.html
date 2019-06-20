@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    
+</head>
+<body onkeydown="fromKey(event)">
+        
+    <div class= "container">
+        <div class="row">
+            <div class="screen1">
+                hey
+                
+            </div>
+        </div>
+        <div class="row h22">
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="seven()" class="btn btn-primary btn-lg">7</button>
+            </div>
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="eight()" class="btn btn-primary btn-lg">8</button>
+            </div>
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="nine()" class="btn btn-primary btn-lg">9</button>
+            </div>
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="add()" class="btn btn-primary-lg btn-sm dl">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="four()" class="btn btn-primary btn-lg">4</button>
+            </div>
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="five()" class="btn btn-primary btn-lg">5</button>
+            </div>
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="six()" class="btn btn-primary btn-lg">6</button>
+            </div>
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="subtract()" class="btn btn-primary-lg btn-lg">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="one()" class="btn btn-primary btn-lg">1</button>
+            </div>
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="two()" class="btn btn-primary btn-lg">2</button>
+            </div>
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="three()" class="btn btn-primary btn-lg">3</button>
+            </div>
+            <div class= "col-*-* pad">
+                    <button type="button" onclick="multiply()" class="btn btn-primary-lg btn-lg">*</button>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <div class= "col-*-*">
+                    <button type="button" onclick="deletee()" class="btn btn-danger btn-sm dl">Delete</button>
+            </div>
+            <div class= "col-*-*">
+                    <button type="button" onclick="zero()" class="btn btn-primary btn-sm dl">0</button>
+            </div>
+            <div class= "col-*-*">
+                    <button type="button"  onclick="ac()" class="btn btn-danger btn-sm dl">AC</button>
+            </div>
+            <div class= "col-*-*">
+                    <button type="button" onclick="divide()" class="btn btn-primary-lg btn-sm dl">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class= "col-md-12">
+                    <button type="button" onclick="result()" class="btn btn-primary-lg btn-success results">Result</button>
+            </div>
+        </div>
+    </div>
+      
+
+    
+    <script src='main.js'></script>
+</body>
+</html>
