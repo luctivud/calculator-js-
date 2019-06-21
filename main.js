@@ -1,159 +1,58 @@
 var x;
 x = document.querySelector(".screen1");
-var y;
-y="";
+var y="";
 var q;
 var s;
-var val1;
-var val2;
-var temp;
+var a =0;
+var b=0;
+var t;
 
-
-function fromKey(event) {
+function fromKey(event, t) {
     q = event.key;
-    console.log(q);
-    if(q==="Backspace"){
+    t=t;
+    if(q==="Backspace" || t=="Backspace"){
         deletee();
     }
-    else if(q=="1" || q=="2" || q=="3" || q=="4" || q=="5" || q=="6" || q=="7" || q=="8" || q=="9" || q=="0" || q=="+" || q=="-" || q=="*" || q=="/"){
-        keyEntry(q);
+    else if(q=="1" || q=="2" || q=="3" || q=="4" || q=="5" || q=="6" || q=="7" || q=="8" || q=="9" || q=="0"){
+
+        number(q);
     }
-    else if(q=="+"){
-        add();
+    else if(q=="+" || q=="/" || q=="*" || q=="-"){
+        s=String(q);
+        number(s);
     }
-    else if(q=="/"){
-        divide();
-    }
-    else if(q=="*"){
-        multiply();
-    }
-    else if(q=="-"){
-        subtract();
-    }
-    else if(q=="="){
+    else if(q=="=" || q=="Enter"){
         result();
     }
-    else{
+    else if(q==undefined){
+        number(t);
     }
+    else{
 
-
-    
-
+    }
 };
 
-
-
-function zero(){
-    y = y + "0";
-    audio();
-    textchanger();
-    
+function number(val){
+    y = y + String(val);
+    textchanger(y);
 };
 
-function one(){
-    y = y + "1";
-    textchanger();
-};
-
-
-function two(){
-    y = y + "2";
-    textchanger();
-
-};
-
-function three(){
-    y = y + "3";
-    textchanger();
-
-};
-
-function four(){
-    y = y + "4";
-    textchanger();
-
-};
-
-function five(){
-    y = y + "5";
-    textchanger();
-
-};
-
-function six(){
-    y = y + "6";
-    textchanger();
-
-};
-
-function seven(){
-    y = y + "7";
-    textchanger();
-
-};
-
-function eight(){
-    y = y + "8";
-    textchanger();
-
-};
-
-function nine(){
-    y = y + "9";
-    textchanger();
-
-};
-
-function add(){
-    val1 = parseInt(y);
-    temp = y.length;
-    y = y + " + ";
-    textchanger();
-
-};
-
-function subtract(){
-    val1 = parseInt(y);
-    temp = y.length;
-    y = y + " - ";
-    textchanger();
-
-};
-
-function multiply(){
-    val1 = parseInt(y);
-    temp = y.length;
-    y = y + " * ";
-    textchanger();
-
-};
-
-function divide(){
-    val1 = parseInt(y);
-    temp = y.length;
-    y = y + "  / ";
-    textchanger();
-
-};
 function result(){
-    console.log("val 1   " +val1);
-
-    val2 = parseInt(y.slice((temp+3)));
-    console.log( "val 2  "+val2);
-    console.log("temp   "+temp);
-    y = String((val1 + val2));
+    a=eval(y);
+    console.log(a);
+    y=String(a);
     textchanger();
+    
 
-}
+};
 
 function textchanger(){
     x.textContent = y;
+    if(a){
+        y="";
+        a=0;
+    }
 };
-
-function keyEntry(s){
-    y=y + String(s);
-    textchanger();
-}
 
 function deletee(){
     y = y.slice(0,(y.length-1));
@@ -163,9 +62,8 @@ function deletee(){
 function ac(){
     y="";
     textchanger();
-}
+};
 
-function audio(){
-    var audio = new Audio('myau.mp3');
-    audio.play();
-}
+
+
+   

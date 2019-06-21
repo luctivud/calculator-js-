@@ -12,80 +12,83 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     
 </head>
-<body onkeydown="fromKey(event)">
+<body class="hqw" onkeydown="fromKey(event)">
+        <h3 class="container tann"></h3>
+        <br>
+        &nbsp
+        <br>
         
-    <div class= "container">
-        <div class="row">
-            <div class="screen1">
-                hey
-                
-            </div>
+        <div class= "container babe">
+                <div class="row">
+                        <div class="screen1">
+                                Screen
+                        </div>
+                </div>
+                <div class="row h22">
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '7')" class="btn btn-primary btn-lg num">7</button>
+                        </div>
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '8')" class="btn btn-primary btn-lg num">8</button>
+                        </div>
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '9')" class="btn btn-primary btn-lg num">9</button>
+                        </div>
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '+')" class="btn btn-primary-lg btn-sm dl">+</button>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '4')" class="btn btn-primary btn-lg num">4</button>
+                        </div>
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '5')" class="btn btn-primary btn-lg num">5</button>
+                        </div>
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '6')" class="btn btn-primary btn-lg num">6</button>
+                        </div>
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '-')" class="btn btn-primary-lg btn-lg">-</button>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '1')" class="btn btn-primary btn-lg num">1</button>
+                        </div>
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '2')" class="btn btn-primary btn-lg num">2</button>
+                        </div>
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '3')" class="btn btn-primary btn-lg num">3</button>
+                        </div>
+                        <div class= "col-*-* pad">
+                                <button type="button" onclick="fromKey(event, '*')" class="btn btn-primary-lg btn-lg">*</button>
+                        </div>
+                </div>
+                <div class="row d-flex">
+                        <div class= "col-*-*">
+                                <button type="button" onclick="fromKey(event ,'Backspace')" class="btn btn-danger btn-sm dl">Delete</button>
+                        </div>
+                        <div class= "col-*-*">
+                                <button type="button num" onclick="fromKey(event, '0')" class="btn btn-primary btn-sm dl">0</button>
+                        </div>
+                        <div class= "col-*-*">
+                                <button type="button"  onclick="ac()" class="btn btn-danger btn-sm dl">AC</button>
+                        </div>
+                        <div class= "col-*-*">
+                                <button type="button" onclick="fromKey(event, '/')" class="btn btn-primary-lg btn-sm dl">/</button>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class= "col-md-12">
+                                <button type="button" onclick="result()" class="btn btn-primary-lg btn-success results">Result</button>
+                        </div>
+                </div>
         </div>
-        <div class="row h22">
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="seven()" class="btn btn-primary btn-lg">7</button>
-            </div>
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="eight()" class="btn btn-primary btn-lg">8</button>
-            </div>
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="nine()" class="btn btn-primary btn-lg">9</button>
-            </div>
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="add()" class="btn btn-primary-lg btn-sm dl">+</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="four()" class="btn btn-primary btn-lg">4</button>
-            </div>
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="five()" class="btn btn-primary btn-lg">5</button>
-            </div>
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="six()" class="btn btn-primary btn-lg">6</button>
-            </div>
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="subtract()" class="btn btn-primary-lg btn-lg">-</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="one()" class="btn btn-primary btn-lg">1</button>
-            </div>
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="two()" class="btn btn-primary btn-lg">2</button>
-            </div>
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="three()" class="btn btn-primary btn-lg">3</button>
-            </div>
-            <div class= "col-*-* pad">
-                    <button type="button" onclick="multiply()" class="btn btn-primary-lg btn-lg">*</button>
-            </div>
-        </div>
-        <div class="row d-flex">
-            <div class= "col-*-*">
-                    <button type="button" onclick="deletee()" class="btn btn-danger btn-sm dl">Delete</button>
-            </div>
-            <div class= "col-*-*">
-                    <button type="button" onclick="zero()" class="btn btn-primary btn-sm dl">0</button>
-            </div>
-            <div class= "col-*-*">
-                    <button type="button"  onclick="ac()" class="btn btn-danger btn-sm dl">AC</button>
-            </div>
-            <div class= "col-*-*">
-                    <button type="button" onclick="divide()" class="btn btn-primary-lg btn-sm dl">/</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class= "col-md-12">
-                    <button type="button" onclick="result()" class="btn btn-primary-lg btn-success results">Result</button>
-            </div>
-        </div>
-    </div>
       
 
     
-    <script src='main.js'></script>
+        <script src='main.js'></script>
 </body>
 </html>

@@ -1,6 +1,8 @@
 body{
-    margin-top: 100px;
+    background: url("bg.jpg");
+    background-size: auto;
 }
+
 button{
     margin: 6px;
 }
@@ -8,6 +10,7 @@ button{
 .btn-primary{
     color: black;
 }
+
 .pad{
     width: 6%;
     border: 8%;
@@ -33,4 +36,13 @@ button{
     border: 1px solid red;
     background: #b6bbc4;
     text-align: right;
+}
+.tann{
+    text-align: center;
+}
+.babe{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
